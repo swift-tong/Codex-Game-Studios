@@ -49,17 +49,115 @@ src/
   AGENTS.md
 ```
 
-## Using It In Codex
+## Prerequisites
+
+Before using this repository, make sure you have:
+
+- Codex installed and working in your local environment
+- Git available in your shell
+- A workspace where you can open this repository in Codex
+
+Optional but useful:
+
+- Python 3 for projects or checks that rely on Python tooling
+- Node.js for projects or scripts that rely on JavaScript tooling
+
+## How To Use It
+
+This repository is meant to be opened in Codex and driven through chat.
+You do not "run" it like a game runtime. You use it as the instruction,
+workflow, and template surface for planning and building a game project.
+
+### Basic Setup
 
 1. Clone the repo into a workspace.
 2. Open it in Codex.
 3. Start from [AGENTS.md](./AGENTS.md).
-4. Invoke a skill naturally in chat, for example:
+4. Read the quick references if needed:
+   - [Quick Start](./.agents/docs/quick-start.md)
+   - [Workflow Guide](./docs/WORKFLOW-GUIDE.md)
+   - [Technical Preferences](./.agents/docs/technical-preferences.md)
+5. Invoke a skill naturally in chat, for example:
    - `$start`
    - `$brainstorm`
    - `$setup-engine godot 4.6`
    - `$project-stage-detect`
-5. Let Codex follow the local `AGENTS.md` and `.agents/skills` guidance.
+6. Let Codex follow the local `AGENTS.md` and `.agents/skills` guidance.
+
+### What Codex Reads
+
+When you work inside this repository, Codex primarily uses:
+
+- [AGENTS.md](./AGENTS.md) as the root instruction file
+- [`.agents/skills`](./.agents/skills) for reusable workflows
+- [`.agents/agents`](./.agents/agents) for role definitions
+- [`.agents/docs`](./.agents/docs) for templates, standards, and process docs
+- nested `AGENTS.md` files in [`design/`](./design/AGENTS.md), [`docs/`](./docs/AGENTS.md), and [`src/`](./src/AGENTS.md)
+
+### What To Say In Codex
+
+Typical prompts look like:
+
+- `Run $start`
+- `Use $brainstorm to help me define a 2D roguelike`
+- `Run $setup-engine godot 4.6`
+- `Use $design-system for combat`
+- `Run $project-stage-detect on this repo`
+- `Read AGENTS.md and tell me the next step`
+
+You can either name a skill directly or describe the task in plain language.
+
+## Usage By Scenario
+
+### Scenario 1: Starting A New Game From Scratch
+
+Use this path if you have no existing game repo or only a rough idea.
+
+1. Run `$start`
+2. Run `$brainstorm` to generate and narrow the concept
+3. Run `$setup-engine` to pick and configure the engine
+4. Run `$map-systems` to identify the game's systems and dependencies
+5. Run `$design-system <system-name>` for each major system
+6. Run `$review-all-gdds`
+7. Run `$create-architecture`
+8. Run `$create-epics`
+9. Run `$create-stories`
+10. Run `$dev-story` to implement work
+
+### Scenario 2: Adopting It In An Existing Game Project
+
+Use this path if you already have code, design docs, or production files.
+
+1. Copy or merge this template into the existing repository
+2. Make sure the root [AGENTS.md](./AGENTS.md) and [`.agents`](./.agents) tree are present
+3. Open the repo in Codex
+4. Run `$project-stage-detect`
+5. Run `$adopt`
+6. Run `$gate-check` to see what is missing before the next phase
+7. Fill gaps using the recommended skills
+
+### Scenario 3: Using Only Part Of The Template
+
+You do not need to use the full end-to-end workflow.
+
+Common partial uses:
+
+- Use only the design flow: `$brainstorm`, `$map-systems`, `$design-system`
+- Use only the architecture flow: `$create-architecture`, `$architecture-decision`
+- Use only the production flow: `$create-epics`, `$create-stories`, `$sprint-plan`
+- Use only the QA/release flow: `$team-qa`, `$smoke-check`, `$release-checklist`
+
+## Minimal Example
+
+If you want the shortest possible path to verify the template works:
+
+1. Open the repo in Codex
+2. Say `Run $start`
+3. Then say `Run $brainstorm for a small 2D action game`
+4. Then say `Run $setup-engine godot 4.6`
+5. Then say `Run $map-systems`
+
+If those steps work, the repository is installed and usable in Codex.
 
 If you are adapting an existing game project instead of starting from scratch, begin with `$project-stage-detect` and `$adopt`.
 
@@ -81,6 +179,17 @@ If you are adapting an existing game project instead of starting from scratch, b
 14. `$story-done`
 15. `$team-qa`
 16. `$release-checklist`
+
+## Common Outputs
+
+As you use the workflow, Codex will typically create or update:
+
+- design documents under `design/`
+- technical and architecture docs under `docs/`
+- production planning docs under `production/`
+- source code and implementation files under `src/`
+
+This repository provides the process and templates. Your actual game-specific content is expected to be created on top of it.
 
 ## Codex-Native Notes
 
