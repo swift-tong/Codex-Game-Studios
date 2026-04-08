@@ -1,0 +1,30 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="640" fill="#0F172A"/>
+  <rect x="72" y="72" width="1136" height="496" rx="28" fill="#111827" stroke="#1F2937" stroke-width="2"/>
+  <circle cx="1090" cy="152" r="84" fill="#132238"/>
+  <circle cx="1090" cy="152" r="52" fill="#0F172A" stroke="#22C55E" stroke-width="12"/>
+  <path d="M1062 154L1082 174L1122 130" stroke="#22C55E" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="156" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700">
+    Codex Game Studios
+  </text>
+  <text x="108" y="286" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="108" font-weight="800">
+    49 Agents
+  </text>
+  <text x="108" y="402" fill="#38BDF8" font-family="Segoe UI, Arial, sans-serif" font-size="108" font-weight="800">
+    72 Skills
+  </text>
+  <text x="108" y="500" fill="#E5E7EB" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="600">
+    Concept to Release
+  </text>
+  <text x="108" y="548" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500">
+    Codex-first game development template
+  </text>
+  <rect x="836" y="420" width="292" height="54" rx="27" fill="#163047" stroke="#1E4F72"/>
+  <text x="867" y="456" fill="#22C55E" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">
+    game-design workflow
+  </text>
+  <rect x="836" y="488" width="246" height="54" rx="27" fill="#163047" stroke="#1E4F72"/>
+  <text x="868" y="524" fill="#38BDF8" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">
+    template repository
+  </text>
+</svg>
