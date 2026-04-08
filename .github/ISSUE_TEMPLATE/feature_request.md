@@ -13,7 +13,7 @@ A brief description of what you'd like added or changed.
 ## Type
 
 - [ ] New agent
-- [ ] New skill (slash command)
+- [ ] New skill
 - [ ] New hook
 - [ ] New rule
 - [ ] New template
