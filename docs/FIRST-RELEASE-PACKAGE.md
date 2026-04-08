@@ -60,7 +60,7 @@ templates, rules, and release processes.
 - Promoted `.agents/` to the active docs, skills, rules, and role-definition tree
 - Reworked the repository to be Codex-first across README, contribution docs, and GitHub templates
 - Migrated the active skill surface away from structured UI-tool assumptions toward plain-text Codex-compatible interaction patterns
-- Archived Claude-era assets under `legacy/` instead of keeping them on the active project surface
+- Removed pre-Codex assets from the public project surface
 
 ## Included
 
@@ -73,7 +73,6 @@ templates, rules, and release processes.
 ## Notes
 
 - The active runtime surface is `AGENTS.md` plus `.agents/`
-- Historical Claude-era material remains in `legacy/` for reference
 - Existing users should review `UPGRADING.md` if they are carrying local customizations
 ```
 
@@ -88,6 +87,6 @@ Use a simple four-line social preview:
 
 ## Final Pre-Publish Decisions
 
-- Keep or remove `legacy/` from the first public release
+- Verify no removed historical paths are still referenced in public docs
 - Decide whether to keep the migration document visible in the main docs nav
 - Add a social preview image now or after first publish

@@ -8,7 +8,7 @@ Use this checklist before publishing Codex Game Studios as a public repository.
 - [ ] `AGENTS.md` is the active root instruction file
 - [ ] `.agents/` is complete and committed
 - [ ] Nested `AGENTS.md` files exist where needed
-- [ ] `legacy/` is either intentionally kept or intentionally removed
+- [ ] No removed historical directories are still referenced in public docs
 
 ## Public Docs
 
@@ -31,7 +31,7 @@ Use this checklist before publishing Codex Game Studios as a public repository.
 - [ ] Remove local-only or editor-only files you do not want tracked
 - [ ] Review `git status` for accidental changes
 - [ ] Confirm no active docs still point to obsolete paths
-- [ ] Decide whether archived Claude-era material should stay public
+- [ ] Confirm the public repository surface matches the current Codex-first structure
 
 ## Release
 

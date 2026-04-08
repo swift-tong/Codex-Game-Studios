@@ -11,7 +11,7 @@ This repository is publishable as a Codex-first project. The main remaining work
 - `.agents/` is now the active instruction and skills surface
 - Public repo docs are largely Codex-first
 - GitHub issue / PR templates and ownership files have been updated
-- Legacy Claude-era content has been moved under `legacy/`
+- Historical pre-Codex content has been removed from the public repository surface
 
 ## Findings
 
@@ -43,15 +43,15 @@ Why this matters:
 Recommendation:
 - Treat this as post-release polish unless you want a very clean first public release
 
-### 4. Repository still includes the full `legacy/` archive
+### 4. Public docs should not reference removed historical paths
 
 Why this matters:
-- This is acceptable if intentional
-- It increases repository size and can blur the project's identity
+- Stale references make the repository feel inconsistent
+- New users may look for directories that no longer exist
 
 Recommendation:
-- Keep it for now if historical comparison matters
-- Remove it in a future cleanup if you want a sharper Codex-only identity
+- Remove or rewrite these references before or immediately after publish
+- Keep the public docs focused on the active Codex surface
 
 ## Verdict
 
@@ -60,7 +60,6 @@ Recommendation:
 
 ## Suggested Next Actions
 
-1. Decide whether `legacy/` stays public for the first release
-2. Do one manual polish pass on `docs/COLLABORATIVE-DESIGN-PRINCIPLE.md` and any other sampled deep docs
-3. Optionally trim or rewrite historical migration notes for a cleaner first impression
-4. Then publish `v1.0.0-codex`
+1. Do one manual polish pass on `docs/COLLABORATIVE-DESIGN-PRINCIPLE.md` and any other sampled deep docs
+2. Remove or rewrite any stale references to removed historical paths
+3. Then publish `v1.0.0-codex`
