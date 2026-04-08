@@ -1,15 +1,15 @@
 ## Summary
 
-Brief description of what this PR does.
+Brief description of what this PR changes.
 
 ## Type of Change
 
 - [ ] New agent
 - [ ] New skill
-- [ ] New hook or rule
+- [ ] New rule or workflow document
 - [ ] Bug fix
 - [ ] Documentation improvement
-- [ ] Other:
+- [ ] Other
 
 ## Changes
 
@@ -19,9 +19,8 @@ Brief description of what this PR does.
 
 ## Checklist
 
-- [ ] I've tested this in a Codex session
+- [ ] I tested this in a Codex session when applicable
 - [ ] New agents include the Collaboration Protocol section
 - [ ] New skills use the subdirectory format (`.agents/skills/<name>/SKILL.md`)
-- [ ] Reference docs are updated (agent-roster, skills-reference, hooks-reference, rules-reference)
-- [ ] Hooks use `grep -E` (POSIX) and fail gracefully without jq/python
-- [ ] No hardcoded paths or platform-specific assumptions
+- [ ] Reference docs are updated where needed (agent-roster, skills-reference, hooks-reference, rules-reference)
+- [ ] No hardcoded paths or platform-specific assumptions were introduced

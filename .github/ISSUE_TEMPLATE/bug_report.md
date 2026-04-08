@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Something isn't working as expected
+about: Something is not working as expected
 title: "[Bug] "
 labels: bug
 assignees: ''
@@ -8,14 +8,14 @@ assignees: ''
 
 ## Description
 
-A clear description of what the bug is.
+A clear description of the problem.
 
 ## Steps to Reproduce
 
 1. Open Codex in a project using this template
-2. Run `/<skill>` or trigger `<agent>`
+2. Invoke a skill such as `$start` or follow the relevant agent workflow
 3. ...
-4. See error
+4. Observe the failure
 
 ## Expected Behavior
 
@@ -27,23 +27,20 @@ What actually happened. Include any error messages or unexpected output.
 
 ## Environment
 
-- **OS**: (e.g., Windows 10, macOS 14, Ubuntu 24.04)
-- **Shell**: (e.g., Git Bash, zsh, bash)
-- **Codex version**: (record the app or CLI version if relevant)
-- **Node.js version**: (run `node --version`)
-- **jq installed?**: Yes / No
-- **Python installed?**: Yes / No
+- **OS**: (for example Windows 11, macOS 14, Ubuntu 24.04)
+- **Shell**: (for example PowerShell, zsh, bash)
+- **Codex version**: (app or CLI version if relevant)
+- **Runtime details**: (Node.js, Python, engine version, or other tooling if relevant)
 
 ## Affected Component
 
-- [ ] Agent (which one?):
-- [ ] Skill (which one?):
-- [ ] Hook (which one?):
-- [ ] Rule (which one?):
+- [ ] Agent (which one?)
+- [ ] Skill (which one?)
+- [ ] Rule
 - [ ] Template
 - [ ] Documentation
-- [ ] Other:
+- [ ] Other
 
 ## Additional Context
 
-Any other context — screenshots, terminal output, or the session log if relevant.
+Any other context, screenshots, terminal output, or session details that help reproduce the issue.
